@@ -20,12 +20,7 @@ const AssemblyAiTranscribe: React.FC = () => {
       },
     });
     console.log("check 1");
-    // const reader = new FileReader();
-    // reader.readAsArrayBuffer(file);
     var audio = file;
-    // reader.onloadend = async () => {
-    //   audio = new Int16Array(reader.result as ArrayBuffer);
-    // };
     var postResOne;
     postResOne = await assembly.post("/upload", audio);
 
@@ -59,6 +54,7 @@ const AssemblyAiTranscribe: React.FC = () => {
     <div>
       <input type="file" onChange={handleFile} accept="audio/*" />
       <button onClick={transcribe}>Transcribe</button>
+      <br />
       <div>{transcription}</div>
     </div>
   );
