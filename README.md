@@ -1,4 +1,12 @@
+## Testing Assembly AI
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+This is a simple [Next.js](https://nextjs.org/) w/ Typescript barebones setup to test uploading local audio files to assembly and then get a transcription of the uploaded file to display on the screen. 
+
+To use the site, once up and running, simply upload an audio file using the ```Choose File``` button.
+From there, press the ```Transcribe``` button and wait while the file is processed by the AI
+
+Once it is done processing the audio file, it will display it on the screen!
 
 ## Getting Started
 
