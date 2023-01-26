@@ -43,7 +43,7 @@ const AssemblyAiTranscribe: React.FC = () => {
         break;
       }
       await new Promise((resolve) => setTimeout(resolve, 2000));
-      console.log("REDO");
+      console.log("RESEND REQUEST");
     }
     setTranscription(getRes.data.text);
     console.log(getRes.data);
