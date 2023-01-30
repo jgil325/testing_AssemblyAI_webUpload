@@ -1,5 +1,12 @@
 import React, { useState } from "react";
 import axios from "axios";
+import styled from "styled-components";
+
+const TranscribeButton = styled.button`
+  color: white;
+  background: tomato;
+  border-radius: 5px;
+`;
 
 const AssemblyAiTranscribe: React.FC = () => {
   const axios = require("axios");
@@ -53,7 +60,8 @@ const AssemblyAiTranscribe: React.FC = () => {
   return (
     <div>
       <input type="file" onChange={handleFile} accept="audio/*" />
-      <button onClick={transcribe}>Transcribe</button>
+      {/* <button onClick={transcribe}>Transcribe</button> */}
+      <TranscribeButton onClick={transcribe}>Transcribe</TranscribeButton>
       <br />
       <div>{transcription}</div>
     </div>
